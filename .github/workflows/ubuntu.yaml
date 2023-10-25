@@ -1,0 +1,14 @@
+name: Test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  linux-test:
+    name: Generic test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Configure and build
+        run: echo "hello"
+        shell: bash
