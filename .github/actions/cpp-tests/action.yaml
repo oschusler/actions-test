@@ -3,13 +3,13 @@ description: "Compile C++ parts"
 inputs:
   os:
     required: true
-    type: string
+    description: The operating system
   compiler:
     required: true
-    type: string
+    description: Compiler to use
   build_type:
     required: true
-    type: string
+    description: Is this a debug or release build?
 
 runs:
   using: composite
