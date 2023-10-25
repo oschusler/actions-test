@@ -1,0 +1,19 @@
+name: Compile C++
+description: "Compile C++ parts"
+inputs:
+  os:
+    required: true
+    type: string
+  compiler:
+    required: true
+    type: string
+  build_type:
+    required: true
+    type: string
+
+runs:
+  using: composite
+  steps:
+    - name: Test configurations
+      run: echo "os:" ${{ inputs.os }} ", compiler:" ${{ inputs.compiler }} ", build_type:" ${{ inputs.build_type }}
+      shell: bash

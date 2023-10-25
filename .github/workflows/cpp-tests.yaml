@@ -31,7 +31,7 @@ jobs:
       - name: Test configurations
         run: echo "os:" ${{ matrix.os }} ", compiler:" ${{ matrix.compiler }} ", build_type:" ${{ matrix.build_type }}
         shell: bash
-      - uses: ./.github/workflows/tests.yaml
+      - uses: ./.github/actions/cpp-tests
         with:
           os: ${{ matrix.os }}
           ocompilers: ${{ matrix.compiler }}
